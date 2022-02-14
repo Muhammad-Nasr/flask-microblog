@@ -1,0 +1,1 @@
+web: flask db upgrade; flask lang translate compile; gunicorn microblog:app

@@ -8,7 +8,8 @@ load_dotenv(os.path.join(basedir, '.env'))
 
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'how are you'
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL', '').replace(
+        'postgres://', 'postgresql://') or \
                               'sqlite:///' + os.path.join(basedir, 'blog.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     MAIL_SERVER = os.environ.get('MAIL_SERVER')
@@ -24,3 +25,5 @@ class Config(object):
     POSTS_PER_PAGE = 3
 
     ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
+
+    LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')

@@ -1,4 +1,5 @@
-2022-02-08 17:08:37,902 ERROR: Exception on /user/mohamed [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
+2022-02-08 17:46:02,885 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-08 17:46:21,112 ERROR: Exception on /unfollow/mohamed [POST] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
 Traceback (most recent call last):
   File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
     response = self.full_dispatch_request()
@@ -10,11 +11,23 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
   File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 80, in user
-    print(current_user.followers.c.follower_id)
-AttributeError: 'AppenderBaseQuery' object has no attribute 'c'
-2022-02-08 17:10:15,733 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 17:10:23,892 ERROR: Exception on /user/mohamed [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 154, in unfollow
+    current_user.unfollow(user)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\models.py", line 55, in unfollow
+    if self.is_following(user):
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\models.py", line 60, in is_following
+    followers.c.followed_id == user.id).count() > 0
+AttributeError: 'BaseQuery' object has no attribute 'id'
+2022-02-08 17:46:57,059 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-08 18:35:18,821 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-08 18:45:30,744 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-08 18:47:01,422 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-08 18:48:34,578 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-08 19:01:28,044 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-08 19:05:32,567 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 06:57:00,113 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 06:59:47,302 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 06:59:50,325 ERROR: Exception on / [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
 Traceback (most recent call last):
   File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
     response = self.full_dispatch_request()
@@ -26,11 +39,25 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
   File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 80, in user
-    print(current_user.followers.c.follower_id)
-AttributeError: 'AppenderBaseQuery' object has no attribute 'c'
-2022-02-08 17:11:01,718 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 17:11:06,732 ERROR: Exception on /user/mohamed [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 27, in index
+    return render_template('index.html', title='home', posts=posts, form=form)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\templates\index.html", line 20, in block 'content'
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2022-02-09 07:02:06,500 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:02:09,275 ERROR: Exception on / [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
 Traceback (most recent call last):
   File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
     response = self.full_dispatch_request()
@@ -42,48 +69,9 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
   File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 81, in user
-    print(current_user.followers.c.followed_id)
-AttributeError: 'AppenderBaseQuery' object has no attribute 'c'
-2022-02-08 17:11:13,108 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 17:14:15,697 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 17:16:56,366 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 17:17:41,961 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 17:21:11,363 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 17:21:28,072 ERROR: Exception on /user/mohamed [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
-Traceback (most recent call last):
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1502, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 84, in user
-    print(current_user.followed_id)
-AttributeError: 'User' object has no attribute 'followed_id'
-2022-02-08 17:22:09,725 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 17:22:13,325 ERROR: Exception on /user/wafaa [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
-Traceback (most recent call last):
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1502, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 85, in user
-    print(current_user.follower_id)
-AttributeError: 'User' object has no attribute 'follower_id'
-2022-02-08 17:22:52,140 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 17:26:38,739 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 17:35:44,451 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 17:35:59,988 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 17:40:46,690 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 17:43:56,282 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 27, in index
+    return render_template('index.html', title='home', posts=posts.items(), form=form)
+TypeError: 'list' object is not callable
+2022-02-09 07:03:04,770 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:05:07,419 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:08:49,312 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
