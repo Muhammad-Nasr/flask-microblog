@@ -1,0 +1,87 @@
+2022-02-09 07:08:53,897 ERROR: Exception on /explore [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 180, in explore
+    posts = Post.query.order_by(Post.timestamp.desc()).paginate(page, 3, False).itesm
+AttributeError: 'Pagination' object has no attribute 'itesm'
+2022-02-09 07:09:51,236 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:21:53,194 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:21:56,117 ERROR: Exception on / [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 29, in index
+    if posts.has_next:
+AttributeError: 'list' object has no attribute 'has_next'
+2022-02-09 07:27:37,387 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:27:39,625 ERROR: Exception on / [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 30, in index
+    if posts.has_next else None
+AttributeError: 'list' object has no attribute 'has_next'
+2022-02-09 07:28:51,721 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:28:53,387 ERROR: Exception on / [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 29, in index
+    next_url = url_for('index', page=posts.nex_num)\
+AttributeError: 'Pagination' object has no attribute 'nex_num'
+2022-02-09 07:29:17,385 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:29:19,335 ERROR: Exception on / [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 32, in index
+    if posts.has_previous:
+AttributeError: 'Pagination' object has no attribute 'has_previous'
+2022-02-09 07:29:56,113 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:30:58,045 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:32:55,113 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:37:20,900 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:39:20,253 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:40:25,947 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:44:03,633 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]

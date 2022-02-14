@@ -1,0 +1,98 @@
+2022-02-09 07:44:07,808 ERROR: Exception on /explore [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 194, in explore
+    if posts.has_next else None
+AttributeError: 'list' object has no attribute 'has_next'
+2022-02-09 07:44:36,447 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:54:50,323 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:55:25,147 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:57:22,757 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:59:02,692 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 09:12:23,683 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:57]
+2022-02-09 09:14:19,142 ERROR: Exception on /reset_password_request [POST] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 228, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\mail.py", line 17, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\mail.py", line 11, in send_email
+    mail.send(msg)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "C:\python10.2\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\python10.2\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\python10.2\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\python10.2\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\python10.2\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2022-02-09 09:15:23,285 ERROR: Exception on /reset_password_request [POST] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 228, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\mail.py", line 17, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\mail.py", line 11, in send_email
+    mail.send(msg)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "C:\python10.2\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\python10.2\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\python10.2\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\python10.2\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\python10.2\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2022-02-09 09:15:38,260 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:57]
+2022-02-09 09:15:39,217 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:57]
+2022-02-09 09:18:31,604 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:57]
+2022-02-09 09:20:46,202 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:57]
+2022-02-09 09:20:52,261 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:57]
+2022-02-09 09:20:52,969 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:57]
+2022-02-09 09:21:24,885 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:57]
+2022-02-09 09:21:36,570 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:57]
+2022-02-09 09:25:11,171 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:57]
+2022-02-09 09:25:11,881 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:57]
+2022-02-09 17:12:51,913 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:57]

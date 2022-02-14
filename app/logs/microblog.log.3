@@ -1,0 +1,77 @@
+2022-02-08 17:46:02,885 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-08 17:46:21,112 ERROR: Exception on /unfollow/mohamed [POST] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 154, in unfollow
+    current_user.unfollow(user)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\models.py", line 55, in unfollow
+    if self.is_following(user):
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\models.py", line 60, in is_following
+    followers.c.followed_id == user.id).count() > 0
+AttributeError: 'BaseQuery' object has no attribute 'id'
+2022-02-08 17:46:57,059 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-08 18:35:18,821 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-08 18:45:30,744 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-08 18:47:01,422 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-08 18:48:34,578 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-08 19:01:28,044 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-08 19:05:32,567 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 06:57:00,113 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 06:59:47,302 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 06:59:50,325 ERROR: Exception on / [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 27, in index
+    return render_template('index.html', title='home', posts=posts, form=form)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\templates\index.html", line 20, in block 'content'
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2022-02-09 07:02:06,500 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:02:09,275 ERROR: Exception on / [GET] [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\NATO-alphabet-start\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\routes.py", line 27, in index
+    return render_template('index.html', title='home', posts=posts.items(), form=form)
+TypeError: 'list' object is not callable
+2022-02-09 07:03:04,770 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:05:07,419 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
+2022-02-09 07:08:49,312 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
