@@ -42,8 +42,8 @@ def create_app(config_class=Config):
     app.elasticsearch = Elasticsearch([app.config['ELASTICSEARCH_URL']]) \
         if app.config['ELASTICSEARCH_URL'] else None
 
-    from app.errors import errors
-    app.register_blueprint(errors)
+    from app.errors import bp as errors_bp
+    app.register_blueprint(errors_bp)
 
     from app.auth import bp as auth_bp
     app.register_blueprint(auth_bp, url_prefix='/auth')
@@ -53,6 +53,9 @@ def create_app(config_class=Config):
 
     from .cli import bp as translate_bp
     app.register_blueprint(translate_bp)
+
+    from app.api import bp as api_bp
+    app.register_blueprint(api_bp, url_prefix='/api')
 
     if not app.debug and not app.testing:
         if app.config['LOG_TO_STDOUT']:
