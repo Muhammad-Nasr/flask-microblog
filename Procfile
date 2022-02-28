@@ -1,1 +1,1 @@
-web: flask db upgrade; flask lang translate compile; gunicorn microblog:app
+web: flask db upgrade; flask lang translate compile; gunicorn --worker-tmp-dir /dev/shm --config gunicorn_config.py microblog:app
