@@ -98,7 +98,7 @@ class User(PaginatedAPIMixin, UserMixin, db.Model):
 
     def avatar(self, size):
         if not self.email:
-            self.email = 'example@email.com
+            self.email = 'example@email.com'
             
         digest = md5(self.email.lower().encode('utf-8')).hexdigest()
         return 'https://www.gravatar.com/avatar/{}?d=identicon&s={}'.format(
