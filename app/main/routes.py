@@ -34,7 +34,7 @@ def index():
     if request.method == 'GET':
 
         page = request.args.get('page', 1, type=int)
-        posts = current_user.followed_posts().paginate(page, 3, False)
+        posts = current_user.followed_posts().paginate(page, 5, False)
 
         next_url = url_for('main.index', page=posts.next_num)\
             if posts.has_next else None
@@ -56,7 +56,7 @@ def user(username):
     user = User.query.filter_by(username=username).first_or_404()
 
     page = request.args.get('page', 1, type=int)
-    posts = Post.query.order_by(Post.timestamp.desc()).paginate(page, 3, False)
+    posts = Post.query.order_by(Post.timestamp.desc()).paginate(page, 5, False)
 
     next_url = url_for('main.user', username=user.username,  page=posts.next_num) \
         if posts.has_next else None
@@ -74,7 +74,7 @@ def user(username):
 @login_required
 def explore():
     page = request.args.get('page', 1, type=int)
-    posts = Post.query.order_by(Post.timestamp.desc()).paginate(page, 3, False)
+    posts = Post.query.order_by(Post.timestamp.desc()).paginate(page, 5, False)
     next_url = url_for('main.explore', page=posts.next_num) \
         if posts.has_next else None
 
