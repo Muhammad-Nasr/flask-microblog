@@ -1,14 +1,18 @@
-from app import db, login
+from app import db, login, admin
 from datetime import datetime, timedelta
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
 from hashlib import md5
 from time import time
 import jwt
-from flask import current_app, url_for
+from flask import current_app, redirect, url_for, request
 import json
 import base64
 import os
+from flask_admin.contrib.sqla import ModelView
+from flask_login import current_user
+from flask_admin import AdminIndexView
+
 
 @login.user_loader
 def load_user(id):
@@ -54,7 +58,7 @@ followers = db.Table('followers',
 class User(PaginatedAPIMixin, UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(64), index=True, unique=True)
-    email = db.Column(db.String(120), index=True, unique=True)
+    email = db.Column(db.String(120))
     password_hash = db.Column(db.String(128))
     posts = db.relationship('Post', backref='author', lazy='dynamic')
     about_me = db.Column(db.String(140))
@@ -81,9 +85,6 @@ class User(PaginatedAPIMixin, UserMixin, db.Model):
     token = db.Column(db.String(32), index=True, unique=True)
     token_expiration = db.Column(db.DateTime)
 
-
-
-
     @property
     def password(self):
         return self.password
@@ -99,6 +100,21 @@ class User(PaginatedAPIMixin, UserMixin, db.Model):
         digest = md5(self.email.lower().encode('utf-8')).hexdigest()
         return 'https://www.gravatar.com/avatar/{}?d=identicon&s={}'.format(
             digest, size)
+
+    @staticmethod
+    def create_admin():
+        admin = User.query.filter_by(id=1).first()
+        if not admin:
+            admin = User(id=1, username='admin', email=os.environ.get("ADMIN_MAIL"),
+                         about_me='I am the admin of the microblog, welcome to your microblog',
+                         password=os.environ.get('ADMIN_PASSWORD'))
+            db.session.add(admin)
+            db.session.commit()
+
+    @staticmethod
+    def admin():
+        admin = User.query.filter_by(id=1).first()
+        return admin
 
     def follow(self, user):
         if not self.is_following(user):
@@ -235,3 +251,45 @@ class Notification(db.Model):
 
     def get_data(self):
         return json.loads(str(self.payload_json))
+
+
+class MyAdminIndexView(AdminIndexView):
+    def is_accessible(self):
+        if current_user.is_active:
+            if current_user.id == 1:
+                return current_user.is_authenticated
+
+    def inaccessible_callback(self, name, **kwargs):
+        return redirect(url_for('main.index', next=request.url))
+
+
+class UserView(ModelView):
+    form_columns = ['id', 'username', 'email','about_me', 'posts', 'last_seen',
+                    'messages_sent', 'messages_received', 'notifications', 'followed', 'followers']
+
+    def is_accessible(self):
+        if current_user.is_active:
+            if current_user.id == 1:
+                return current_user.is_authenticated
+
+    def inaccessible_callback(self, name, **kwargs):
+
+        return redirect(url_for('main.index', next=request.url))
+
+
+class MicroBlogModelView(ModelView):
+
+    def is_accessible(self):
+        if current_user.is_active:
+            if current_user.id == 1:
+                return current_user.is_authenticated
+
+    def inaccessible_callback(self, name, **kwargs):
+
+        return redirect(url_for('main.index', next=request.url))
+
+
+admin.add_view(UserView(User, db.session))
+admin.add_view(MicroBlogModelView(Post, db.session))
+admin.add_view(MicroBlogModelView(Message, db.session))
+admin.add_view(MicroBlogModelView(Notification, db.session))

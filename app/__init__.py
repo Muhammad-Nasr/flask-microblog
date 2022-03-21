@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, current_app
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
@@ -8,6 +8,7 @@ from flask_mail import Mail
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask_babel import Babel, lazy_gettext as _l
+from flask_admin import Admin
 from config import Config
 from elasticsearch import Elasticsearch
 import os
@@ -25,6 +26,7 @@ mail = Mail()
 bootstrap = Bootstrap()
 moment = Moment()
 babel = Babel()
+admin = Admin()
 
 
 def create_app(config_class=Config):
@@ -38,6 +40,7 @@ def create_app(config_class=Config):
     bootstrap.init_app(app)
     moment.init_app(app)
     babel.init_app(app)
+    admin.init_app(app, index_view=models.MyAdminIndexView())
 
     app.elasticsearch = Elasticsearch([app.config['ELASTICSEARCH_URL']]) \
         if app.config['ELASTICSEARCH_URL'] else None
@@ -82,8 +85,9 @@ def create_app(config_class=Config):
 
 @babel.localeselector
 def get_locale():
-    # return request.accept_languages.best_match(app.config['LANGUAGES'])
-    return 'ar'
+    return request.accept_languages.best_match(current_app.config['LANGUAGES'])
+
 
 
 from app import models
+

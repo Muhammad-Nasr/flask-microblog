@@ -1,50 +1,4 @@
-2022-02-08 10:31:25,468 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 12:11:04,724 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 12:12:28,790 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-08 12:12:38,537 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:55]
-2022-02-12 09:35:29,355 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-12 09:35:30,199 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-12 09:39:25,463 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-12 09:39:26,212 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 11:36:50,366 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:68]
-2022-02-14 11:37:42,528 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:68]
-2022-02-14 11:38:13,281 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:68]
-2022-02-14 11:41:37,452 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:90]
-2022-02-14 11:41:58,839 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:90]
-2022-02-14 11:42:11,120 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:90]
-2022-02-14 12:50:15,378 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:71]
-2022-02-14 12:51:17,731 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:71]
-2022-02-14 12:52:36,332 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:119]
-2022-02-14 12:52:53,239 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:119]
-2022-02-14 12:53:07,957 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:119]
-2022-02-14 13:02:07,919 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:03:06,315 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:03:50,189 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:04:04,030 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:04:58,237 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:05:10,569 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:06:45,634 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:07:09,332 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:07:30,751 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:08:33,253 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:13:01,186 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:13:17,758 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:13:29,475 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:25:30,603 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:25:56,763 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:26:15,773 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:27:24,462 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:30:04,465 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-14 13:30:19,979 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-15 10:36:35,241 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
-2022-02-15 10:36:52,348 ERROR: Exception on /auth/login [POST] [in C:\python10.2\lib\site-packages\flask\app.py:1891]
-Traceback (most recent call last):
-  File "C:\python10.2\lib\site-packages\sqlalchemy\util\_collections.py", line 1020, in __call__
-    return self.registry[key]
-KeyError: 13920
-
-During handling of the above exception, another exception occurred:
-
+2022-02-15 10:41:25,357 ERROR: Exception on /mohamed/popup [GET] [in C:\python10.2\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "C:\python10.2\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -58,30 +12,73 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "C:\python10.2\lib\site-packages\flask\app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\auth\routes.py", line 41, in login
-    user = User.query.filter_by(username=form.username.data).first()
-  File "C:\python10.2\lib\site-packages\flask_sqlalchemy\__init__.py", line 514, in __get__
-    return type.query_class(mapper, session=self.sa.session())
-  File "C:\python10.2\lib\site-packages\sqlalchemy\orm\scoping.py", line 78, in __call__
-    return self.registry()
-  File "C:\python10.2\lib\site-packages\sqlalchemy\util\_collections.py", line 1022, in __call__
-    return self.registry.setdefault(key, self.createfunc())
-  File "C:\python10.2\lib\site-packages\sqlalchemy\orm\session.py", line 3286, in __call__
-    return self.class_(**local_kw)
-  File "C:\python10.2\lib\site-packages\flask_sqlalchemy\__init__.py", line 138, in __init__
-    bind = options.pop('bind', None) or db.engine
-  File "C:\python10.2\lib\site-packages\flask_sqlalchemy\__init__.py", line 943, in engine
-    return self.get_engine()
-  File "C:\python10.2\lib\site-packages\flask_sqlalchemy\__init__.py", line 962, in get_engine
-    return connector.get_engine()
-  File "C:\python10.2\lib\site-packages\flask_sqlalchemy\__init__.py", line 556, in get_engine
-    self._engine = rv = self._sa.create_engine(sa_url, options)
-  File "C:\python10.2\lib\site-packages\flask_sqlalchemy\__init__.py", line 972, in create_engine
-    return sqlalchemy.create_engine(sa_url, **engine_opts)
-  File "C:\python10.2\lib\site-packages\sqlalchemy\engine\__init__.py", line 500, in create_engine
-    return strategy.create(*args, **kwargs)
-  File "C:\python10.2\lib\site-packages\sqlalchemy\engine\strategies.py", line 87, in create
-    dbapi = dialect_cls.dbapi(**dbapi_args)
-  File "C:\python10.2\lib\site-packages\sqlalchemy\dialects\mysql\pymysql.py", line 62, in dbapi
-    return __import__("pymysql")
-ModuleNotFoundError: No module named 'pymysql'
+  File "C:\python10.2\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\main\routes.py", line 99, in user_popup
+    return render_template('user_popup.html', user=user, form=form, title='PopUp')
+  File "C:\python10.2\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\python10.2\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\python10.2\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\python10.2\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\python10.2\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\python10.2\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\python10.2\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\python10.2\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\templates\user_popup.html", line 58, in template
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2022-02-15 10:43:12,509 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 11:44:55,961 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 11:52:46,976 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 13:23:20,865 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 13:43:11,856 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 13:46:50,472 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 13:48:15,333 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 13:49:04,571 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 13:49:37,100 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 13:50:10,824 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 13:51:31,876 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 13:51:48,698 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 13:52:56,382 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 13:54:07,981 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 13:54:49,387 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 13:56:42,042 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 14:19:47,497 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 14:20:59,118 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 14:21:10,173 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 14:25:36,213 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 14:26:28,643 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 14:27:33,529 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 14:29:00,422 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 14:29:59,603 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 14:30:53,589 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 14:40:46,804 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 14:52:43,396 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 14:54:33,363 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 15:17:31,335 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 15:25:04,406 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 15:26:24,961 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 15:27:25,330 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 15:27:42,132 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 16:35:19,878 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 16:35:29,739 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 16:50:25,265 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-15 16:52:11,709 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:74]
+2022-02-16 15:06:24,197 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:77]
+2022-02-16 15:06:25,707 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:77]
+2022-02-16 15:06:43,222 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:77]
+2022-02-16 15:08:12,675 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:77]
+2022-02-16 15:13:45,860 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:77]
+2022-02-16 15:14:03,849 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:77]
+2022-02-16 15:14:27,361 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:77]
+2022-02-16 15:19:38,112 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:77]
+2022-02-16 15:20:31,588 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:77]
+2022-02-16 15:20:32,811 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:77]
+2022-02-16 15:21:26,620 INFO: Microblog startup [in C:\Users\Acer\PycharmProjects\pythonProject\pythonProject\MicroBlog-Mega-Toturial\app\__init__.py:77]

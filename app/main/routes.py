@@ -17,10 +17,7 @@ from app.main import bp
 @login_required
 def index():
     form = PostForm()
-    print(os.environ.get('MAIL_SERVER'))
-    print( os.environ)
-    print(os.environ.get('MS_TRANSLATOR_KEY'))
-
+    User.create_admin()
     if form.validate_on_submit():
         try:
             language = detect(form.post.data)
@@ -41,14 +38,11 @@ def index():
 
         next_url = url_for('main.index', page=posts.next_num)\
             if posts.has_next else None
-        print(posts.has_next)
-        print(next_url)
 
         if posts.has_prev:
             prev_url = url_for('main.index', page=posts.prev_num)
         else:
             prev_url = None
-        print(prev_url)
 
         return render_template('index.html', title='home', posts=posts.items, form=form,\
                                next_url=next_url, prev_url=prev_url)
@@ -66,27 +60,14 @@ def user(username):
 
     next_url = url_for('main.user', username=user.username,  page=posts.next_num) \
         if posts.has_next else None
-    print(posts.has_next)
-    print(next_url)
 
     if posts.has_prev:
         prev_url = url_for('main.user', page=posts.prev_num, username=user.username,)
     else:
         prev_url = None
-    print(prev_url)
-
-
-    print(user)
-    print(current_user)
-    print(current_user.followed.all())
-    print(current_user.followers.all())
-    print(current_user.followers.first())
-
-    print(current_user.is_following(user))
 
     return render_template('user.html', user=user, posts=posts.items, form=form,\
                            next_url=next_url, prev_url=prev_url)
-
 
 
 @bp.route('/user/<username>/popup')

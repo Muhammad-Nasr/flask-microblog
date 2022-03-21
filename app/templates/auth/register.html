@@ -3,6 +3,10 @@
 
 {% block app_content %}
     <h1>{{ _('Register') }}</h1>
+    <p class="display-4">
+        The Email is optional,You can register without your email,
+        but it is recommended to reset your password.
+    </p>
     <div class="row">
         <div class="col-md-4">
             {{ wtf.quick_form(form) }}

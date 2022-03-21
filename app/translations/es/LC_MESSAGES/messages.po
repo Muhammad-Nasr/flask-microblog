@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-02-15 14:54+0300\n"
-"PO-Revision-Date: 2022-02-14 13:27+0300\n"
+"POT-Creation-Date: 2022-03-20 16:29+0200\n"
+"PO-Revision-Date: 2022-03-20 16:20+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
 "Language-Team: es <LL@li.org>\n"
@@ -30,55 +30,55 @@ msgstr ""
 msgid "Error: the translation service failed."
 msgstr ""
 
-#: app/auth/forms.py:14 app/auth/forms.py:21 app/main/forms.py:11
+#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:11
 msgid "Username"
 msgstr ""
 
-#: app/auth/forms.py:15 app/auth/forms.py:23 app/auth/forms.py:46
+#: app/auth/forms.py:10 app/auth/forms.py:20 app/auth/forms.py:44
 msgid "Password"
 msgstr ""
 
-#: app/auth/forms.py:16
+#: app/auth/forms.py:11
 msgid "Remember Me"
 msgstr ""
 
-#: app/auth/forms.py:17 app/templates/auth/login.html:5
+#: app/auth/forms.py:12 app/templates/auth/login.html:5
 msgid "Sign In"
 msgstr ""
 
-#: app/auth/forms.py:22 app/auth/forms.py:41
+#: app/auth/forms.py:17 app/auth/forms.py:39
 msgid "Email"
 msgstr ""
 
-#: app/auth/forms.py:25 app/auth/forms.py:48
+#: app/auth/forms.py:22 app/auth/forms.py:46
 msgid "Repeat Password"
 msgstr ""
 
-#: app/auth/forms.py:27 app/templates/auth/register.html:5
+#: app/auth/forms.py:24 app/templates/auth/register.html:5
 msgid "Register"
 msgstr ""
 
-#: app/auth/forms.py:32 app/main/forms.py:24
+#: app/auth/forms.py:29 app/main/forms.py:24
 msgid "Please use a different username."
 msgstr ""
 
-#: app/auth/forms.py:37
-msgid "Please use a different email address."
-msgstr ""
-
-#: app/auth/forms.py:42 app/auth/forms.py:50
+#: app/auth/forms.py:40 app/auth/forms.py:48
 msgid "Request Password Reset"
 msgstr ""
 
-#: app/auth/routes.py:27 app/auth/routes.py:76
-msgid "Check your email for the instructions to reset your password"
+#: app/auth/routes.py:27
+msgid "Congrats, you have registered successfully!"
 msgstr ""
 
-#: app/auth/routes.py:44
+#: app/auth/routes.py:52
 msgid "Invalid username or password"
 msgstr ""
 
-#: app/auth/routes.py:94
+#: app/auth/routes.py:85
+msgid "Check your email for the instructions to reset your password"
+msgstr ""
+
+#: app/auth/routes.py:103
 msgid "Your password has been reset."
 msgstr ""
 
@@ -98,31 +98,31 @@ msgstr ""
 msgid "Message"
 msgstr ""
 
-#: app/main/routes.py:35
+#: app/main/routes.py:40
 msgid "Your post is now live!"
 msgstr ""
 
-#: app/main/routes.py:120
+#: app/main/routes.py:125
 msgid "Your changes have been saved."
 msgstr ""
 
-#: app/main/routes.py:138
+#: app/main/routes.py:143
 msgid "User {} not found."
 msgstr ""
 
-#: app/main/routes.py:165
+#: app/main/routes.py:170
 msgid "You cannot unfollow yourself!"
 msgstr ""
 
-#: app/main/routes.py:170
+#: app/main/routes.py:175
 msgid "You are not following {}."
 msgstr ""
 
-#: app/main/routes.py:216
+#: app/main/routes.py:221
 msgid "Your message has been sent."
 msgstr ""
 
-#: app/main/routes.py:218
+#: app/main/routes.py:227
 msgid "Send Message"
 msgstr ""
 
@@ -159,11 +159,11 @@ msgstr ""
 msgid "Messages"
 msgstr ""
 
-#: app/templates/base.html:46
+#: app/templates/base.html:52
 msgid "Logout"
 msgstr ""
 
-#: app/templates/base.html:83
+#: app/templates/base.html:89
 msgid "Error: Could not contact server."
 msgstr ""
 

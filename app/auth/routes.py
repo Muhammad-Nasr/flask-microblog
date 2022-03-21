@@ -6,7 +6,7 @@ from app import db
 from app.auth import bp
 from app.auth.forms import LoginForm, RegistrationForm, \
     ResetPasswordRequestForm, ResetPasswordForm
-from app.models import User
+from app.models import User, Message
 from app.auth.email import send_password_reset_email
 
 
@@ -20,11 +20,19 @@ def register():
         user = User(username=form.username.data, email=form.email.data,
                     password=form.password.data)
 
-        print(user.password_hash)
         db.session.add(user)
         db.session.commit()
         flash(
-            _('Check your email for the instructions to reset your password'))
+            _('Congrats, you have registered successfully!'))
+
+        body = f'Hi {user.username}🖐!' \
+               f'Welcome to your microblog , you can add posts follow and unfollow, ' \
+               f'nice to have you, have a good day!'
+        msg = Message(author=User.admin(), recipient=user, body=body)
+        User.admin().follow(user) if User.admin() else None
+        db.session.add(msg)
+        user.add_notification('unread_message_count', user.new_messages())
+        db.session.commit()
         return redirect(url_for('auth.login'))
     return render_template('auth/register.html', title='Register', form=form)
 
@@ -49,6 +57,7 @@ def login():
         flash(message='congrats, you logged in successfully/'
                       'welcome  {}'.format(form.username.data))
         next_page = request.args.get('next')
+
 
         if not next_page or url_parse(next_page).netloc != '':
             next_page = url_for('main.index')
