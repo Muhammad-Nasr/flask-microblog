@@ -34,7 +34,7 @@ def index():
     if request.method == 'GET':
 
         page = request.args.get('page', 1, type=int)
-        posts = current_user.followed_posts().paginate(page, 3, False)
+        posts = current_user.followed_posts().paginate(page, 5, False)
 
         next_url = url_for('main.index', page=posts.next_num)\
             if posts.has_next else None
@@ -56,7 +56,7 @@ def user(username):
     user = User.query.filter_by(username=username).first_or_404()
 
     page = request.args.get('page', 1, type=int)
-    posts = user.posts.order_by(Post.timestamp.desc()).paginate(page, 3, False)
+    posts = Post.query.order_by(Post.timestamp.desc()).paginate(page, 5, False)
 
     next_url = url_for('main.user', username=user.username,  page=posts.next_num) \
         if posts.has_next else None
@@ -67,6 +67,24 @@ def user(username):
         prev_url = None
 
     return render_template('user.html', user=user, posts=posts.items, form=form,\
+                           next_url=next_url, prev_url=prev_url)
+
+
+@bp.route('/explore')
+@login_required
+def explore():
+    page = request.args.get('page', 1, type=int)
+    posts = Post.query.order_by(Post.timestamp.desc()).paginate(page, 5, False)
+    next_url = url_for('main.explore', page=posts.next_num) \
+        if posts.has_next else None
+
+
+    if posts.has_prev:
+        prev_url = url_for('main.explore', page=posts.prev_num)
+    else:
+        prev_url = None
+
+    return render_template('index.html', title='explore', posts=posts.items,\
                            next_url=next_url, prev_url=prev_url)
 
 
@@ -153,23 +171,6 @@ def unfollow(username):
     else:
         return redirect(url_for('main.index'))
 
-
-@bp.route('/explore')
-@login_required
-def explore():
-    page = request.args.get('page', 1, type=int)
-    posts = Post.query.order_by(Post.timestamp.desc()).paginate(page, 3, False)
-    next_url = url_for('main.index', page=posts.next_num) \
-        if posts.has_next else None
-
-
-    if posts.has_prev:
-        prev_url = url_for('main.index', page=posts.prev_num)
-    else:
-        prev_url = None
-
-    return render_template('index.html', title='explore', posts=posts.items,\
-                           next_url=next_url, prev_url=prev_url)
 
 
 @bp.route('/translate', methods=['POST'])
