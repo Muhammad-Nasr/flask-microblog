@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>Contact Us</h1>
+ <p class="display-4">
+        You are welcome to say anything, your comments or any notes about the web.
+        We really appreciate your opinion.
+    </p>
+    <div class="row">
+        <div class="col-md-4">
+            {{ wtf.quick_form(form) }}
+        </div>
+    </div>
+
+{% endblock %}
