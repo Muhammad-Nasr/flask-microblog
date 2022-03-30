@@ -256,6 +256,14 @@ class Notification(db.Model):
         return json.loads(str(self.payload_json))
 
 
+class ContactUs(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(128))
+    email = db.Column(db.String(120))
+    message = db.Column(db.String(140))
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+
+
 class MyAdminIndexView(AdminIndexView):
     def is_accessible(self):
         if current_user.is_active:
@@ -267,8 +275,11 @@ class MyAdminIndexView(AdminIndexView):
 
 
 class UserView(ModelView):
-    form_columns = ['id', 'username', 'email','about_me', 'posts', 'last_seen',
+    form_columns = ['id', 'username', 'email','about_me', 'posts', 'last_seen','password_hash',
                     'messages_sent', 'messages_received', 'notifications', 'followed', 'followers']
+
+    def on_model_change(self, form, model, is_created):
+        model.password_hash = generate_password_hash(password=model.password_hash)
 
     def is_accessible(self):
         if current_user.is_active:
@@ -296,3 +307,4 @@ admin.add_view(UserView(User, db.session))
 admin.add_view(MicroBlogModelView(Post, db.session))
 admin.add_view(MicroBlogModelView(Message, db.session))
 admin.add_view(MicroBlogModelView(Notification, db.session))
+admin.add_view(MicroBlogModelView(ContactUs, db.session))

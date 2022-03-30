@@ -1,7 +1,6 @@
-from flask import request
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField
-from wtforms.validators import ValidationError, DataRequired, Length
+from wtforms.validators import ValidationError, DataRequired, Length, Email
 from flask_babel import _, lazy_gettext as _l
 from app.models import User
 
@@ -37,3 +36,11 @@ class MessageForm(FlaskForm):
     message = TextAreaField(_l('Message'), validators=[
         DataRequired(), Length(min=0, max=140)])
     submit = SubmitField(_l('Submit'))
+
+
+class ContactForm(FlaskForm):
+    name = StringField('Name', validators=[DataRequired()])
+    email = StringField('Email', validators=[Email(), DataRequired()])
+    message = TextAreaField('Message', validators=[
+        DataRequired(), Length(min=0, max=200)])
+    submit = SubmitField('Submit')

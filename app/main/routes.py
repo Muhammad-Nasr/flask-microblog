@@ -6,10 +6,11 @@ from flask_login import current_user, login_required
 from flask_babel import _, get_locale
 from langdetect import detect, LangDetectException
 from app import db
-from app.main.forms import EditProfileForm, EmptyForm, PostForm, MessageForm
-from app.models import User, Post, Message, Notification
+from app.main.forms import EditProfileForm, EmptyForm, PostForm, MessageForm, ContactForm
+from app.models import User, Post, Message, Notification, ContactUs
 from app.translate import translate
 from app.main import bp
+
 
 
 @bp.route('/', methods=['POST', 'GET'])
@@ -238,3 +239,23 @@ def notifications():
         'data': n.get_data(),
         'timestamp': n.timestamp
     } for n in notifications])
+
+
+@bp.route('/contact', methods=['GET', 'POST'])
+def contact():
+    form = ContactForm()
+    if form.validate_on_submit():
+        new_contact = ContactUs(
+            name=form.name.data,
+            email=form.email.data,
+            message=form.message.data,
+        )
+        db.session.add(new_contact)
+        db.session.commit()
+        flash('your message sent successfully,'
+              'thanks for your contact,'
+              'we will get back to you soon🤙')
+        return redirect(url_for('main.contact'))
+
+
+    return render_template('contact.html', form=form, title='Contact')

@@ -13,10 +13,6 @@ from config import Config
 from elasticsearch import Elasticsearch
 import os
 
-
-
-
-
 db = SQLAlchemy()
 migrate = Migrate()
 login = LoginManager()
