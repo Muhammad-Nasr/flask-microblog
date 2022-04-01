@@ -6,14 +6,18 @@
 {# load bootstrap-rtl if locale is arabic #}
 
 {% endif %}
+
 <script src="https://kit.fontawesome.com/bb747e3fc4.js" crossorigin="anonymous"></script>
 <link rel="icon" href="{{url_for('static', filename='favicon.ico')}}" type="image/x-icon">
+{% endblock %}
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 {% endblock %}
 {% block title %}
 {% if title %}{{ title }} - Microblog{% else %}{{ _('Welcome to Microblog') }}{% endif %}
 
 {% endblock %}
-
 {% block navbar %}
 <nav class="navbar navbar-default">
     <div class="container">
@@ -74,7 +78,20 @@
     {% block app_content %}{% endblock %}
 </div>
 
-{% include 'footer.html' %}
+<div class="footer  text-center ">
+    <nav class="navbar navbar-default nav-footer" style="margin-bottom: 0px;">
+
+<span>
+    <a class="footer-item" href="{{ url_for('main.contact')}}" style="padding: 20px; font-size: 3rem;">
+                      contact us
+                    </a>
+                    <a class="footer-item" href="https://github.com/Muhammad-Nasr/flask-BookStore" target="_blank">
+                      <i class="fab fa-github" style="font-size: 3rem; padding: 20px;"></i>
+                    </a>
+
+</span>
+    </nav>
+</div>
 {% endblock %}
 
 
