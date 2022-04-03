@@ -12,11 +12,11 @@ class Config(object):
                               'sqlite:///' + os.path.join(basedir, 'blog.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     MAIL_SERVER = os.environ.get('MAIL_SERVER')
-    MAIL_PORT = 465 or 25
+    MAIL_PORT = 465
     MAIL_USE_SSL = True
 
-    MAIL_USERNAME = 'muhammad@muhammadnasr.com'
-    MAIL_PASSWORD = "zwxo-josi-lmms-ztsh"
+    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     MAIL_DEFAULT_SENDER = os.environ.get('ADMIN')
 
     LANGUAGES = ['ar', 'en', 'es']

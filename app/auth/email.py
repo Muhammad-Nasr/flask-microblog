@@ -12,8 +12,8 @@ def send_async_email(app, msg):
 
 
 
-def send_email(subject, sender, recipients, text_body, html_body):
-    msg = Message(subject, sender=sender, recipients=recipients)
+def send_email(subject, sender, bcc, recipients, text_body, html_body):
+    msg = Message(subject, sender=sender, bcc=bcc, recipients=recipients)
     msg.body = text_body
     msg.html = html_body
 
@@ -24,6 +24,7 @@ def send_password_reset_email(user):
     token = user.get_reset_password_token()
     send_email('[Microblog] Reset Your Password',
                sender= 'support.microblog@muhammadnasr.com',
+               bcc= ['microblog@muhammadnasr.com'],
                recipients=[user.email],
                text_body=render_template('email/reset_password.txt',
                                          user=user, token=token),
